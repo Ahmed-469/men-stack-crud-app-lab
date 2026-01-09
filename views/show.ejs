@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= foundCar.name %></title>
+</head>
+<body>
+    <h1><%= foundCar.name %> - <%= foundCar.brand %></h1>
+    <p><strong>Year:</strong> <%= foundCar.year %></p>
+    <p><strong>Price:</strong> <%= foundCar.price %></p>
+    <p><strong>Description:</strong> <%= foundCar.description %></p>
+    <p><strong>isElectric:</strong> <%= foundCar.isElectric %></p>
+    <form action="/cars/delete/<%= foundCar._id %>" method="post">
+    <button>Delete Car</button>
+    </form>
+    <a href="/cars/<%= foundCar._id %>/edit">Edit</a>
+    <a href="/cars">Back</a>
+</body>
+</html>

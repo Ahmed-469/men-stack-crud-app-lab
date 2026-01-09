@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Car</title>
+</head>
+<body>
+    <h1>Add a New Car</h1>
+    <form action="/cars" method="post">
+
+        <label for="name">Name:</label>
+        <input  name="name" id="name" type="text">
+
+        <label for="brand">Brand:</label>
+        <input name="brand" id="brand" type="text">
+
+        <label for="year">Year:</label>
+        <input name="year" id="year" type="text">
+
+        <label for="price">Price: </label>
+        <input name="price" id="price" type="text">
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="description"></textarea>
+
+        <label for="isElectric">isElectric:</label>
+        <input name="isElectric" id="isElectric" type="checkbox">
+
+        <button type="submit">Done</button>
+    </form>
+    <a href="/cars">Back</a>
+</body>
+</html>

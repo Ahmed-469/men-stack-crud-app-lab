@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+</head>
+<body>
+    <h1>Cars List</h1>
+    <ul>
+        <% allCars.forEach((oneCar) => { %>
+            <li> <%= oneCar.name %> - <%= oneCar.brand %></li>
+            <a href="/cars/<%= oneCar._id %>">See Details</a>
+        <% }); %>
+    </ul>
+    <a href="/cars/new">Create a new</a>
+</body>
+</html>
