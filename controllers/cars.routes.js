@@ -16,13 +16,7 @@ router.get('/', async (req, res) => {
 
 // CREATE
 router.get('/new', (req,res) => {
-    try {
-        res.render('new.ejs');
-        console.log('app is working (CREATE)');
-    }
-    catch (error) {
-        console.log('ERROR:', error);
-    }
+    res.render('new.ejs');
 });
 
 router.post('/', async (req,res) => {
